@@ -5,7 +5,7 @@
 // MoveEncoderPID(TestPara, motor speed, encoder travel distance (inches), time to full speed(sec), relative heading(to starting position), braking?)
 // TurnMaxTimePID(TestPara, Desired Heading -180 to 180, time out to calculate turn, Braking?)
 // MoveTimePID(TestPara, motor speed, time traveled (sec), time to full speed, heading, false);
-
+//hello
 void test() {
     // declare initial conditions
     //PIDDataSet TestPara={4,0.1,0.2};
@@ -25,6 +25,8 @@ void test() {
     Pistake.set(true);
     MoveEncoderPID(TestPara, -100, 60, 0.4, 40, true);
     Pistake.set(false);
+    
+    Pistake.set(true);
     /*MoveEncoderPID(TestPara, 100 , 65 ,0.4,0,true);
     TurnMaxTimePID(TestPara, 90, 0.4, true);
     MoveEncoderPID(TestPara, 100 , 50 ,0.4,90,true);
@@ -46,7 +48,7 @@ void test() {
     //MoveEncoderPID(TestPara, 100 , 560 ,0.2,0,true);
 }
 void test2(){  
-    
+    // collecting yellow thing
      PIDDataSet TestPara={1.5,0.1,0.15};
     MoveEncoderPID(TestPara, 100, 12, 0.4, 0, true);
     TurnMaxTimePID(TestPara, 30, 0.5,true);
@@ -56,6 +58,8 @@ void test2(){
     wait(200,msec);
     MoveEncoderPID(TestPara, 100, 0.2, 0.4,30, true);
     Tilt.set(false);
+
+    // putting discs in
     MoveEncoderPID(TestPara, 100, 3, 0.4,30, true);
     TurnMaxTimePID(TestPara, -84, 0.8, true);
     RunRoller(-100);

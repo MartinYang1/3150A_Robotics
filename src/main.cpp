@@ -230,7 +230,7 @@ Zeroing(true,true);
 
 //can start editing if nessary
 //Put Auto route function into if statements to use autoselector
-if(AutoSelectorVal==1)//Quali close 6 triball auto 
+if(AutoSelectorVal==1) //Quali close 6 triball auto 
 {
   test();
 }
@@ -241,9 +241,9 @@ if(AutoSelectorVal==2)// awp mid steal
 
 }
 
-if(AutoSelectorVal==3)// 5 Ball rush
+if(AutoSelectorVal==3) // route2
 {
-  
+  route2();
 } 
 
 if(AutoSelectorVal==4)// Elim-Steal
